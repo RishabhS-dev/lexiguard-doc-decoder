@@ -32,7 +32,8 @@ export const LexiGuardHero = () => {
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
                 Transform complex contracts, rental agreements, and legal terms into clear, 
                 actionable guidance. Get risk analysis, negotiation tips, and plain-language 
-                summaries in seconds.
+                summaries in seconds. Plus, search and understand IPC law codes with detailed 
+                explanations of your rights and how to use them in your favor.
               </p>
             </div>
 
