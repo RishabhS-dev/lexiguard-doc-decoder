@@ -2,41 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* LexiGuard Design System - Professional Legal Assistant */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors */
+    --background: 240 7% 97%;
+    --foreground: 215 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
+    /* Trust & Legal Professional Colors */
+    --primary: 220 85% 25%;        /* Deep Professional Blue */
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 220 85% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Legal Risk System Colors */
+    --success: 142 76% 36%;        /* Safe/Green */
+    --success-foreground: 210 40% 98%;
+    --success-glow: 142 70% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --warning: 32 95% 44%;         /* Caution/Amber */
+    --warning-foreground: 0 0% 9%;
+    --warning-glow: 32 95% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --danger: 0 72% 51%;           /* High Risk/Coral */
+    --danger-foreground: 210 40% 98%;
+    --danger-glow: 0 72% 60%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Interface Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --card-border: 220 13% 91%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 215 25% 26%;
 
-    --radius: 0.5rem;
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 212 100% 47%;         /* Bright Action Blue */
+    --accent-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 85% 25%;
+
+    --radius: 0.75rem;
+
+    /* LexiGuard Specific Design Tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(220, 85%, 25%), hsl(212, 100%, 47%));
+    --success-gradient: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(142, 70%, 45%));
+    --warning-gradient: linear-gradient(135deg, hsl(32, 95%, 44%), hsl(32, 95%, 55%));
+    --danger-gradient: linear-gradient(135deg, hsl(0, 72%, 51%), hsl(0, 72%, 60%));
+    --glass-bg: hsla(0, 0%, 100%, 0.1);
+    --glass-border: hsla(220, 13%, 91%, 0.3);
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(220, 85%, 25%, 0.2);
+    --shadow-glow-primary: 0 0 40px hsl(220, 85%, 35%, 0.3);
+    --shadow-glow-success: 0 0 30px hsl(142, 70%, 45%, 0.2);
+    --shadow-glow-warning: 0 0 30px hsl(32, 95%, 55%, 0.2);
+    --shadow-glow-danger: 0 0 30px hsl(0, 72%, 60%, 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
